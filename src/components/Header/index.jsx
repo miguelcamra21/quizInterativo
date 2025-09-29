@@ -1,20 +1,9 @@
 import styles from "./Header.module.css"
 import {questions} from "../../data/questions"
-import { useEffect, useState } from "react"
 
-export default function Header({index}) {
-    const [time, setTime] = useState(0) 
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime((prev) => prev + 1)
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [])
-
-  const minutes = Math.floor(time / 60)
-  const seconds = time % 60
+export default function Header({index,time}) {
+    const minutes = Math.floor(time / 60)
+    const seconds = time % 60
 
   return (
     <header>
