@@ -14,7 +14,7 @@ export default function QuestionCard({ index, onClickButton }) {
           <button 
             key={i} 
             className={styles.alternativaButton}
-            onClick={onClickButton}
+            onClick={() => onClickButton(alternativa)}
           >
             {alternativa}
           </button>
@@ -23,3 +23,4 @@ export default function QuestionCard({ index, onClickButton }) {
     </div>
   )
 }
+
