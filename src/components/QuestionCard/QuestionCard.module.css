@@ -1,0 +1,22 @@
+.containerQuestion{
+    text-align: center;
+    padding: 20px;
+    background-color: #535353;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.alternativasContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.alternativaButton{
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+}
